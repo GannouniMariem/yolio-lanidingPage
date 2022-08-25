@@ -1,0 +1,240 @@
+@charset "UTF-8";
+*,
+::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e9ecef;
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-size: calc(15px + 0.5vw);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+br {
+  display: none;
+}
+
+input {
+  border: none;
+  padding: 15px;
+  width: 65%;
+  font-size: 16px;
+  background-color: #ebe8e8;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.bg-shape svg {
+  position: absolute;
+  top: 0;
+  left: -55px;
+  max-width: 100vw;
+  height: 100%;
+  z-index: -9999;
+}
+
+.logo {
+  width: 70px;
+}
+
+@media (max-width: 992px) {
+  .text-section {
+    text-align: center;
+  }
+  .text-section br {
+    display: block;
+  }
+}
+.text-section p:first-child {
+  font-weight: 500;
+  font-size: calc(15px + 1vmax);
+  text-transform: none;
+  color: #0E0F19;
+}
+.text-section p:first-child span {
+  font-weight: 900;
+  font-size: calc(15px + 3vmin);
+  text-transform: uppercase;
+  color: #0E0F19;
+}
+.text-section p:nth-child(2) {
+  font-weight: 900;
+  font-size: calc(15px + 2.2vw);
+  text-transform: uppercase;
+  color: #0E0F19;
+}
+.text-section .input .signin {
+  background-color: #0E0F19;
+  color: #e9ecef;
+  font-weight: 700;
+  font-weight: 500;
+  width: 110px;
+  height: 55px;
+  border-radius: 10px;
+  margin-left: -55px;
+  position: relative;
+  vertical-align: baseline !important;
+}
+.text-section .input .signin--front {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.text-section .input .signin--back {
+  position: absolute;
+  left: 0;
+  transform: translateY(35px);
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.text-section .input .signin .rainbow {
+  position: absolute;
+  left: 5px;
+  right: 0;
+  margin: auto;
+  top: -30px;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+  transform: rotate(35deg);
+}
+.text-section .input .signin .rainbow:before {
+  content: "🌈";
+  left: 0;
+}
+.text-section .input .signin:hover .rainbow {
+  opacity: 1;
+  animation: rotate-nonstop 0.2s infinite;
+}
+.text-section .input .active .signin--front {
+  top: 0;
+  opacity: 0;
+}
+.text-section .input .active .signin--back {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.video-box {
+  position: relative;
+  width: 90%;
+  height: 95%;
+  border: 10px solid #0E0F19;
+  border-right: 0;
+  border-radius: 20px;
+  padding: 15px;
+  margin-right: -25px;
+}
+@media (max-width: 992px) {
+  .video-box {
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    border-right: 10px solid #0E0F19;
+  }
+}
+.video-box img {
+  border-radius: 10px;
+}
+.video-box a {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-box a span i {
+  font-size: 4rem;
+  color: #e9ecef;
+}
+.video-box .video-icon {
+  background-color: #0E0F19 !important;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-box .video-icon svg {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-box .border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7rem;
+  height: 7rem;
+  border: 0.55rem solid #0E0F19;
+  border-radius: 50%;
+  animation: pulse-border 1.5s linear infinite;
+}
+.video-box .border-animation--border-1 {
+  animation-delay: 1.5s;
+}
+.video-box .border-animation--border-2 {
+  animation-delay: 1s;
+}
+
+footer {
+  background-color: #0E0F19;
+}
+footer .text-muted {
+  color: #e9ecef;
+}
+@media (min-width: 992px) {
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes rotate-nonstop {
+  50% {
+    transform: rotate(92deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
