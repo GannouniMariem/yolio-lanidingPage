@@ -1,7 +1,7 @@
 const lightbox = GLightbox({
-    'href': 'https://www.youtube.com/watch?v=Ga6RYejo6Hk',
+    'href': '/assets/demo.mp4',
     'type': 'video',
-    'source': 'youtube', //vimeo, youtube or local
+    'source': 'local', //vimeo, youtube or local
     'width': 800,
 });
 
