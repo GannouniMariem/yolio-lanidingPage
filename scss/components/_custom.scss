@@ -3,7 +3,7 @@
 $dark:#0E0F19;
 $light-dark:rgba(14,15,25,0.5);
 $gray:#ebe8e8;
-$white:#e9ecef;
+$white:#EBEBED;
 
 $font:'Poppins', sans-serif;
 
@@ -18,9 +18,9 @@ $font:'Poppins', sans-serif;
 
 body{
     font-family: $font;
-    background-color:$white;
+    background-color:$white !important;
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-size: calc(15px + 0.5vw);
     
    
@@ -44,8 +44,9 @@ br{
 input{
 
     border: none;
-    padding:15px;
-    width: 65%;
+    padding:18px 15px;
+    width: 68%;
+  
     font-size: 16px;
     background-color: $gray;
     border-radius:10px;

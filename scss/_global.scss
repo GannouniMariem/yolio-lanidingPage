@@ -46,7 +46,7 @@
             font-weight: 700;
             font-weight: 500;
             width: 110px;
-            height: 55px;
+            height: 58px;
             border-radius: 10px;
             margin-left: -55px;
             position: relative;
@@ -179,6 +179,8 @@
 
 footer {
     background-color: $dark;
+    width: 100vw;
+
     .text-muted{
         color: $white;
     }
@@ -186,6 +188,5 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
-}
+    }
 }
